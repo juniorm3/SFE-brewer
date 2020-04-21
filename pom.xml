@@ -30,6 +30,9 @@
 		
 		<!-- Bean Validation / Hibernate Validator -->
 		<hibernate-validator.version>5.2.4.Final</hibernate-validator.version>
+		
+		<!-- Thymeleaf - Layout Dialect -->
+		<thyneleaf-layout-dialect>2.0.5</thyneleaf-layout-dialect>
 	</properties>
 
 	<build>
@@ -95,6 +98,14 @@
             <version>${hibernate-validator.version}</version>
             <scope>compile</scope>
         </dependency>
+        
+        <!-- Thymeleaf - Layout Dialect -->
+		<dependency>
+		    <groupId>nz.net.ultraq.thymeleaf</groupId>
+		    <artifactId>thymeleaf-layout-dialect</artifactId>
+		    <version>${thyneleaf-layout-dialect}</version>		    
+		</dependency>
+		        
 		
 	</dependencies>
 	
