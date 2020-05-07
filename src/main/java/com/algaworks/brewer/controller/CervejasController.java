@@ -44,6 +44,8 @@ public class CervejasController {
 		System.out.println(">>> sku: " + cerveja.getSku());
 		System.out.println(">>> sabor: " + cerveja.getSabor());
 		System.out.println(">>> origem: " + cerveja.getOrigem());
+		
+		System.out.println(">>> Estilo: " + cerveja.getEstilo().getCodigo());
 		return new ModelAndView("redirect:/cervejas/novo");
 	}
 	
